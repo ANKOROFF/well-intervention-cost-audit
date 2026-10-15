@@ -1,0 +1,3 @@
+group	sample_n	weight	outcome_error_by_weight	delivery_error_by_weight
+in selection	131	2563	0.0000	0.0623
+outside selection	319	4237	0.0203	0.0839

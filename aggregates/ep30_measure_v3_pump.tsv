@@ -1,0 +1,11 @@
+population	case	operations	share_operations	CAPEX_pct_C	share_CAPEX
+actual-table	a	275	0.0404	2.7241	0.0272
+actual-table	b	5694	0.8374	84.6261	0.8463
+actual-table	c1 material from other drivers	345	0.0507	9.0734	0.0907
+actual-table	c2 type-median substitution	486	0.0715	3.5766	0.0358
+main_chain-table	a	275	0.0408	3.1767	0.0362
+main_chain-table	b	5694	0.8454	74.0562	0.8432
+main_chain-table	c	766	0.1137	10.5974	0.1207
+chain main_chain	a	241	0.0415	2.7319	0.0369
+chain main_chain	b	4854	0.8360	61.5906	0.8322
+chain main_chain	c	711	0.1225	9.6855	0.1309

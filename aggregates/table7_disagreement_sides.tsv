@@ -1,0 +1,5 @@
+estimator	side	operations	NPV_pct_C
+response model	itemized only	116	+0.57
+response model	day-rate only	229	-1.19
+type median	itemized only	113	+1.11
+type median	day-rate only	293	-3.81

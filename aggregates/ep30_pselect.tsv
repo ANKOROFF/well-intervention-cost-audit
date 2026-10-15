@@ -1,0 +1,27 @@
+variant	type	operations_U	robustly_selected	robustly_rejected	cost_sensitive	S	Wilson_lo	Wilson_hi
+independent draws	RIW	233	196	6	31	0.1330	0.0953	0.1827
+independent draws	ONW	0	0	0	0	nan	nan	nan
+independent draws	HF	554	532	0	22	0.0397	0.0264	0.0594
+independent draws	APF	0	0	0	0	nan	nan	nan
+independent draws	SDT	162	110	5	47	0.2901	0.2257	0.3642
+independent draws	LER	22	19	2	1	0.0455	0.0081	0.2180
+independent draws	CLR	2	2	0	0	0.0000	0.0000	0.6576
+independent draws	BZT	1035	765	86	184	0.1778	0.1557	0.2022
+independent draws	PMO	695	299	291	105	0.1511	0.1264	0.1796
+independent draws	SWO	285	143	101	41	0.1439	0.1078	0.1893
+independent draws	PCM	0	0	0	0	nan	nan	nan
+independent draws	RIS	5	5	0	0	0.0000	-0.0000	0.4345
+independent draws	ALL	2993	2071	491	431	0.1440	0.1319	0.1570
+common multiplier	RIW	233	155	4	74	0.3176	0.2612	0.3799
+common multiplier	ONW	0	0	0	0	nan	nan	nan
+common multiplier	HF	554	415	0	139	0.2509	0.2166	0.2886
+common multiplier	APF	0	0	0	0	nan	nan	nan
+common multiplier	SDT	162	38	1	123	0.7593	0.6879	0.8186
+common multiplier	LER	22	18	1	3	0.1364	0.0475	0.3334
+common multiplier	CLR	2	2	0	0	0.0000	0.0000	0.6576
+common multiplier	BZT	1035	553	64	418	0.4039	0.3744	0.4341
+common multiplier	PMO	695	223	271	201	0.2892	0.2567	0.3240
+common multiplier	SWO	285	97	93	95	0.3333	0.2811	0.3900
+common multiplier	PCM	0	0	0	0	nan	nan	nan
+common multiplier	RIS	5	5	0	0	0.0000	-0.0000	0.4345
+common multiplier	ALL	2993	1506	434	1053	0.3518	0.3349	0.3691

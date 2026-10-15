@@ -1,0 +1,6 @@
+test	outcome	violations
+S1 monotonicity	failed	4059 (1606 + 1297 + 1156 at k = 1.1, 1.5, 2)
+S2 zero pump replacement	passed	0
+S3 equipment-code spelling	not applicable (no string-parsing function in the tested tables)	
+S4 units	not applicable (no unit normalization)	
+S5 scale	passed	0

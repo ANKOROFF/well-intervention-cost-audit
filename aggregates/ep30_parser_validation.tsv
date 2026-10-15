@@ -1,0 +1,78 @@
+level	metric	n	valuation	wilson_lo	wilson_hi	lin_lo	lin_hi	boot_lo	boot_hi
+pool	coverage: parser gave a/b among those determinable by the label	326	0.985781	0.959634	0.995078	0.979781	0.991782	0.979795	0.991979
+pool	false certainty: parser a/b, label 'undeterminable'	310	0.000000	0.000000	0.017779	0.000000	0.000000	0.000000	0.000000
+pool	outcome correctness among those determinable by both	310	1.000000	0.982221	1.000000	1.000000	1.000000	1.000000	1.000000
+pool	coverage miss of the form '50/1550' (parser c, label form B, Q and H present), whole pool	450	0.011593	0.003993	0.033176	0.006409	0.016777	0.006595	0.017146
+pool	outcome error (parser != label), whole pool	450	0.012661	0.004550	0.034724	0.007241	0.018082	0.007098	0.018101
+pool	delivery: exact match (both given)	375	0.956863	0.923366	0.976097	0.936642	0.977083	0.935247	0.974694
+pool	head: exact match (both given)	370	1.000000	0.984161	1.000000	1.000000	1.000000	1.000000	1.000000
+pool	delivery and head both match (both given)	344	0.998674	0.980989	0.999909	0.996607	1.000741	0.996242	1.000000
+pool	spurious number: parser gave delivery, label Q=null	401	0.028239	0.013823	0.056824	0.012425	0.044053	0.013926	0.045521
+pool	lost number: label gave Q, parser null	385	0.007907	0.002134	0.028839	0.002286	0.013528	0.002891	0.014115
+pool	precision outcome same 	51	1.000000	0.909935	1.000000	1.000000	1.000000	1.000000	1.000000
+pool	recall outcome same 	53	0.965665	0.858092	0.992414	0.919666	1.011664	0.919732	1.000000
+pool	precision outcome different	259	1.000000	0.980718	1.000000	1.000000	1.000000	1.000000	1.000000
+pool	recall outcome different	273	0.986774	0.959436	0.995769	0.980593	0.992956	0.980661	0.993121
+pool	precision outcome undeterminable	140	0.896396	0.821200	0.942193	0.852040	0.940751	0.851880	0.941917
+pool	recall outcome undeterminable	124	1.000000	0.957857	1.000000	1.000000	1.000000	1.000000	1.000000
+pool	F1 outcome same 	53	0.982533	--	--	--	--	0.958188	1.000000
+pool	F1 outcome different	273	0.993343	--	--	--	--	0.990236	0.996549
+pool	F1 outcome undeterminable	140	0.945368	--	--	--	--	0.920016	0.970090
+pool	MAE delivery	375	45.722878	--	--	13.620683	77.825073	17.816476	81.935674
+pool	MAE head	370	0.000000	--	--	0.000000	0.000000	0.000000	0.000000
+group	RIW	44	0.011372	0.000755	0.149015				
+group	HF	78	0.010940	0.001369	0.081902				
+group	SDT	69	0.000000	0.000000	0.068987				
+group	BZT	83	0.016016	0.002626	0.091417				
+group	PMO	78	0.012915	0.001750	0.088981				
+group	SWO	61	0.012657	0.001456	0.101303				
+group	other	37	0.022388	0.002753	0.159625				
+cell	RIW|A same 	6	0.000000	0.000000	0.390343				
+cell	RIW|B different, in bounds	22	0.000000	0.000000	0.148660				
+cell	RIW|B different, outside bounds	6	0.000000	0.000000	0.390343				
+cell	RIW|V not parsed	6	0.333333	0.096769	0.700012				
+cell	RIW|V one empty	4	0.000000	0.000000	0.489900				
+cell	HF|A same 	7	0.000000	0.000000	0.354339				
+cell	HF|B different, in bounds	34	0.000000	0.000000	0.101518				
+cell	HF|B different, outside bounds	7	0.000000	0.000000	0.354339				
+cell	HF|V not parsed	9	0.222222	0.063224	0.547417				
+cell	HF|V both empty	6	0.000000	0.000000	0.390343				
+cell	HF|V one empty	15	0.000000	0.000000	0.203889				
+cell	SDT|A same 	6	0.000000	0.000000	0.390343				
+cell	SDT|B different, in bounds	38	0.000000	0.000000	0.091813				
+cell	SDT|B different, outside bounds	4	0.000000	0.000000	0.489900				
+cell	SDT|V not parsed	13	0.000000	0.000000	0.228102				
+cell	SDT|V one empty	8	0.000000	0.000000	0.324416				
+cell	BZT|A same 	11	0.000000	0.000000	0.258840				
+cell	BZT|B different, in bounds	41	0.000000	0.000000	0.085670				
+cell	BZT|B different, outside bounds	9	0.000000	0.000000	0.299153				
+cell	BZT|V not parsed	9	0.444444	0.188775	0.733353				
+cell	BZT|V both empty	6	0.000000	0.000000	0.390343				
+cell	BZT|V one empty	7	0.000000	0.000000	0.354339				
+cell	PMO|A same 	7	0.000000	0.000000	0.354339				
+cell	PMO|B different, in bounds	40	0.000000	0.000000	0.087625				
+cell	PMO|B different, outside bounds	7	0.000000	0.000000	0.354339				
+cell	PMO|V not parsed	8	0.375000	0.136842	0.694262				
+cell	PMO|V both empty	5	0.000000	0.000000	0.434491				
+cell	PMO|V one empty	11	0.000000	0.000000	0.258840				
+cell	SWO|A same 	8	0.000000	0.000000	0.324416				
+cell	SWO|B different, in bounds	31	0.000000	0.000000	0.110259				
+cell	SWO|B different, outside bounds	6	0.000000	0.000000	0.390343				
+cell	SWO|V not parsed	7	0.285714	0.082217	0.641071				
+cell	SWO|V both empty	1	0.000000	0.000000	0.793457				
+cell	SWO|V one empty	8	0.000000	0.000000	0.324416				
+cell	other|A same 	6	0.000000	0.000000	0.390343				
+cell	other|B different, in bounds	8	0.000000	0.000000	0.324416				
+cell	other|B different, outside bounds	6	0.000000	0.000000	0.390343				
+cell	other|V not parsed	4	0.750000	0.300636	0.954414				
+cell	other|V both empty	6	0.000000	0.000000	0.390343				
+cell	other|V one empty	7	0.000000	0.000000	0.354339				
+matrix	parser a / label a	51	275.000						
+matrix	parser a / label b	0	0.000						
+matrix	parser a / label in	0	0.000						
+matrix	parser b / label a	0	0.000						
+matrix	parser b / label b	259	5694.000						
+matrix	parser b / label in	0	0.000						
+matrix	parser in / label a	2	9.778						
+matrix	parser in / label b	14	76.317						
+matrix	parser in / label in	124	744.905						

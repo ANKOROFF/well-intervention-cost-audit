@@ -1,0 +1,13 @@
+sample	pool	workbook	n	rho	ci95_boot	p	median_ratio	n_ratio	sign_matched	n_sign	outcome
+main: one row per workbook	gain_t	plan	254	0.462	[0.347; 0.563]	7.6e-15	0.218	250	0.996	251	
+main: one row per workbook	gain_t	actual	254	0.146	[0.012; 0.278]	0.02	0.27	228	0.908	251	not consistent
+main: one row per workbook	gain_t	npv	<10								
+main: one row per workbook	npv	plan	254	0.439	[0.319; 0.546]	2.3e-13					
+main: one row per workbook	npv	actual	254	0.122	[-0.014; 0.258]	0.051					
+main: one row per workbook	npv	npv	<10								
+sensitivity: all, median	gain_t	plan	266	0.466	[0.362; 0.565]	9.2e-16	0.217	262	0.996	263	
+sensitivity: all, median	gain_t	actual	266	0.145	[0.017; 0.267]	0.018	0.265	239	0.909	263	not consistent
+sensitivity: all, median	gain_t	npv	<10								
+sensitivity: all, median	npv	plan	266	0.447	[0.341; 0.546]	1.9e-14					
+sensitivity: all, median	npv	actual	266	0.124	[-0.002; 0.250]	0.043					
+sensitivity: all, median	npv	npv	<10								

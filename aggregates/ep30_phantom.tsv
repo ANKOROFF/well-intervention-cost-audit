@@ -1,0 +1,4 @@
+variant	n	years	GC	GC_lo	GC_hi	dGC	outcome	GC_no_SDT	lo_no_SDT	hi_no_SDT	n_no_SDT	share_PMO_gain_%	gain_PMO_pct_C	Jaccard_to_V3	disagreements	dCAPEX_pct_C	dCAPEX_%	proppant_above_0_6735	proppant_above_0_chain	RCP_above_common	outcome_F
+V3	5806	9	0.2631	0.1772	0.3453	+0.0000	S	0.2544	0.1909	0.3161	5533	68.54	+5.5529	1.0000	0	+0.0000	+0.000	4777	4158	1955	F-1
+V1	5806	9	0.2674	0.1897	0.3416	+0.0043	S	0.2510	0.1916	0.3089	5533	67.58	+5.5214	0.9898	24	-2.2495	-3.040	1383	1240	0	F-1
+V2	5806	9	0.2638	0.1767	0.3456	+0.0007	S	0.2515	0.1910	0.3094	5533	68.26	+5.5214	0.9979	5	-2.2689	-3.066	1771	1581	630	F-1

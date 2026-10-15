@@ -1,0 +1,13 @@
+area	model	n	mdape	spearman	lo	hi	outcome
+HF	T0	7445	0.5431				
+HF	L1	7445	0.957	0.6458			
+HF	V	7445	0.2671	0.9155			
+HF	OURS	7445	0.2578	0.9275			
+HF	OURS-L1	7445	-0.6992		-0.7047	-0.6923	S
+HF	OURS-V	7445	-0.0093		-0.0125	-0.0061	-
+drilling	T0	6570	0.266				
+drilling	L1	6570	0.2163	0.7197			
+drilling	V	6570	0.2152	0.6062			
+drilling	OURS	6570	0.1692	0.7457			
+drilling	OURS-L1	6570	-0.047		-0.0552	-0.04	N
+drilling	OURS-V	6570	-0.046		-0.053	-0.0414	-

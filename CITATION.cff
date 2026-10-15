@@ -1,0 +1,7 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the paper."
+title: "Auditing Cost Models in Well-Intervention Selection: Reading Cost Drivers from Field Records"
+type: software
+authors:
+  - name: "The authors listed in the paper"
+license: MIT

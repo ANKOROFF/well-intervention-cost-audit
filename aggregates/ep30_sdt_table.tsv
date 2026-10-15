@@ -1,0 +1,5 @@
+row	n	GC	GC_lo	GC_hi	disagreements	only_ITM	only_DR	Jaccard	dK_pct_C	NPV_disagreement_pct_C	outcome
+full	5806	0.2631	0.1772	0.3453	229	95	134	0.9070	+3.8148	+1.0608	S
+no SDT	5533	0.2544	0.1909	0.3161	145	41	104	0.9374	-0.2170	-0.3606	S
+full|SDT					91	90	1		+5.0027	+1.1293	
+full|not-SDT					138	5	133		-1.1879	-0.0683	

@@ -1,0 +1,36 @@
+metric	q05_or_value	q50	q95	note
+n_draws	500			target of the rule: 500
+GC	0.2420	0.2726	0.2961	
+GC_lo	0.1591	0.1949	0.2211	
+sel_diff	130.9500	261.5000	464.1500	
+jaccard	0.8084	0.8954	0.9487	
+mat_RIW	0.1678	0.3018	0.4681	draws with share>0: 500
+mat_ONW	0.0917	0.1784	0.3571	draws with share>0: 500
+mat_HF	0.3331	0.4508	0.5741	draws with share>0: 500
+mat_APF	0.0077	0.0159	0.0299	draws with share>0: 500
+mat_SDT	0.2227	0.3189	0.4329	draws with share>0: 500
+mat_LER	0.1057	0.2054	0.3318	draws with share>0: 500
+mat_CLR	0.0757	0.1421	0.2333	draws with share>0: 500
+mat_BZT	0.1473	0.2806	0.4496	draws with share>0: 500
+mat_PMO	0.1775	0.3346	0.5180	draws with share>0: 500
+mat_SWO	0.1774	0.3293	0.5052	draws with share>0: 500
+mat_PCM	0.0468	0.0887	0.1846	draws with share>0: 500
+mat_RIS	0.0639	0.1213	0.2062	draws with share>0: 500
+R1 (GC>0 and lo>0 in >=95%)	1.000			met
+R2 (disagreement>=100 in >=95%)	0.992			met
+R3 (material share>0 in all 12 types)	types with share>0 in all draws: 12 of 12			met
+spearman GC~proppant_price_t [T1]	-0.014	lo: +0.007		
+spearman GC~proppant_rcp_price_t [T1]	-0.040	lo: -0.037		
+spearman GC~gel_price_m3 [T3]	-0.061	lo: -0.053		
+spearman GC~acid_price_m3 [T3]	+0.021	lo: +0.016		
+spearman GC~nitrogen_price_t [T3]	+0.005	lo: +0.012		
+spearman GC~cement_price_m3 [T3]	-0.014	lo: -0.018		
+spearman GC~pump_price_m3day_m [T3]	+0.449	lo: +0.392		
+spearman GC~drilling_price_m [T2]	-0.123	lo: -0.132		
+spearman GC~workover_rig_price_day [T3]	-0.124	lo: -0.234		
+spearman GC~fleet_hf_price_day [T2]	-0.037	lo: -0.076		
+spearman GC~rig_sdt_price_day [T1]	+0.199	lo: -0.073		
+spearman GC~mobilization_price [T3]	+0.685	lo: +0.658		
+R2_rank GC~group T1 (3 prices)	0.042	lo: 0.007		proppant_price_t, proppant_rcp_price_t, rig_sdt_price_day
+R2_rank GC~group T2 (2 prices)	0.016	lo: 0.022		drilling_price_m, fleet_hf_price_day
+R2_rank GC~group T3 (7 prices)	0.672	lo: 0.632		gel_price_m3, acid_price_m3, nitrogen_price_t, cement_price_m3, pump_price_m3day_m, workover_rig_price_day, mobilization_price

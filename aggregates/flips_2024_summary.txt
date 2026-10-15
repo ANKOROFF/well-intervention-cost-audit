@@ -1,0 +1,34 @@
+# 2024 pool (forecast NPV = response-model forecast, itemized representation; shares of C in per cent)
+pool_size 238
+kept_by_neither 46
+group_size both 149
+group_size itemized_only 30
+group_size dayrate_only 13
+group_forecast_sum_pct_C both 2.12
+group_forecast_sum_pct_C itemized_only 0.44
+group_forecast_sum_pct_C dayrate_only_under_itemized -0.02
+group_forecast_sum_pct_C dayrate_only_under_dayrate 0.02
+mean_draw_freq both 0.949
+mean_draw_freq itemized_only 0.938
+mean_draw_freq dayrate_only 0.291
+draw_sensitive_count both 29 of 149
+draw_sensitive_count itemized_only 11 of 30
+draw_sensitive_count dayrate_only 12 of 13
+draw_sensitive_share both 0.195
+draw_sensitive_share itemized_only 0.367
+draw_sensitive_share dayrate_only 0.923
+forecast_sign_changes 43 of 43
+# 2024 alone
+disagreement 43
+draw_sensitive_in_pool 65
+intersection 23
+union 85
+union_share_of_pool 0.357 of 238
+# nine selection years (5,806-operation chain)
+pool_operations_in_nine_years 2993
+engineers_program_operations 2993
+disagreement 229
+draw_sensitive 431
+intersection 129
+union 531
+union_share_of_engineers_program 0.177

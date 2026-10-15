@@ -1,0 +1,11 @@
+cause	outcome_wrong_n	weight	delivery_wrong_n	weight
+series and one number	15	79	44	334
+range delivery	1	7	28	194
+not ESP	0	0	26	245
+delivery > 1500	1	7	9	167
+head < 300 (truncated)	0	0	9	31
+homoglyph	1	7	5	28
+not nomenclature	0	0	4	16
+merged numeric prefix series	0	0	2	8
+format Q/H no series (50/1550)	1	7	1	7
+total rows	16	86	69	515

@@ -1,0 +1,22 @@
+class	rows	full match	disagreements: case	delivery	head	power
+A same 	10	10	0	0	0	0
+A different	14	14	0	0	0	0
+separators	20	18	2	0	0	2
+Latin	11	6	5	1	1	4
+Cyrillic+Latin	15	5	10	0	0	10
+homoglyph in number	9	0	0	9	1	3
+empty one	8	8	0	0	0	0
+empty both	3	3	0	0	0	0
+duplicate	16	16	0	0	0	0
+truncated	10	7	2	3	3	0
+B no series	17	10	7	0	0	3
+outside bounds size	8	8	0	0	0	0
+at border size	6	6	0	0	0	0
+range delivery	10	0	0	10	0	5
+not ESP	7	5	0	2	2	0
+series and one number	10	0	3	10	10	0
+not nomenclature	20	18	0	0	2	0
+not nomenclature with digits	6	0	6	6	6	2
+old/new nomenclature	11	10	0	1	1	0
+impossible capacity	6	6	0	0	0	0
+case and spaces	6	6	0	0	0	0
