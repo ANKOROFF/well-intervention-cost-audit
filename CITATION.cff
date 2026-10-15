@@ -3,5 +3,13 @@ message: "If you use this repository, please cite the paper."
 title: "Auditing Cost Models in Well-Intervention Selection: Reading Cost Drivers from Field Records"
 type: software
 authors:
-  - name: "The authors listed in the paper"
+  - family-names: "Kornienko"
+    given-names: "Dmitrii"
+  - family-names: "Koroteev"
+    given-names: "Dmitry"
+  - family-names: "Orlov"
+    given-names: "Denis"
+  - family-names: "Safonov"
+    given-names: "Sergey"
+repository-code: "https://github.com/ANKOROFF/well-intervention-cost-audit"
 license: MIT
