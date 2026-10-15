@@ -3,3 +3,5 @@ __pycache__/
 results/
 figures/
 .pytest_cache/
+__pycache__/
+*.pyc
