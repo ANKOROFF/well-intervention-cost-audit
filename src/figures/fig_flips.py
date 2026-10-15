@@ -1,5 +1,4 @@
 """Fig. 3: operations of selection year 2024 whose selection flips between the cost representations. Rebuilds the ex-ante chain with the project modules, keeps the per-operation table only in a temporary directory and deletes it; writes only counts and shares."""
-import config as cfg
 import os, pathlib, shutil, sys
 import numpy as np
 import polars as pl
@@ -10,7 +9,7 @@ import ep19_crossruler as e19
 import stats
 from ep06_ablation import _цены
 from sdt_analysis import цепь
-from common import save, BLACK, DARK, MID, LIGHT, plt
+from style import *
 YEAR, N_DRAWS, EXPECT_DIFF = (2024, 500, 229)
 import tempfile
 SCRATCH = pathlib.Path(tempfile.mkdtemp(prefix='flips_'))
@@ -87,18 +86,24 @@ lines = ['# 2024 pool (forecast NPV = response-model forecast, itemized represen
 OUT_TXT.write_text('\n'.join(lines) + '\n')
 print('\n'.join(lines))
 print('pool', d.height, 'neither', none.sum(), 'mean price-draw freq both/it/dr:', [round(float(fq[m].mean()), 3) if m.any() else None for m in (both, only_i, only_d)], 'share with 0.05<freq<0.95:', [round(float(((fq[m] > 0.05) & (fq[m] < 0.95)).mean()), 3) if m.any() else None for m in (both, only_i, only_d)], 'sign differs in disagreement:', int((np.sign(ni[only_i | only_d]) != np.sign(nd[only_i | only_d])).sum()))
-ni, nd = (100 * ni, 100 * nd)
-fig, ax = plt.subplots(figsize=(7, 3.4))
-ax.axhline(0, color=MID, lw=0.5)
-ax.plot(x[none], ni[none], '.', ms=1.5, color=LIGHT, label='kept by neither', rasterized=True)
-ax.plot(x, nd, '-', lw=0.5, color=MID, label='day-rate forecast (line)', zorder=2)
-ax.plot(x[both], ni[both], 'o', ms=2.2, mfc='none', mec=DARK, mew=0.5, label='kept by both', zorder=3)
-ax.plot(x[only_i], ni[only_i], 's', ms=3.6, mfc=BLACK, mec=BLACK, label='kept only by itemized', zorder=4)
-ax.plot(x[only_d], ni[only_d], '^', ms=4.2, mfc='white', mec=BLACK, mew=0.9, label='kept only by day-rate', zorder=4)
-ax.set_xlabel('Operations of the 2024 pool, ranked by itemized forecast')
-ax.set_ylabel('Forecast NPV, % of C')
-ax.set_ylim(-0.15, ni.max() + 0.01)
+ni, nd = 100 * ni, 100 * nd   # plotted in per cent of C
+YLO, YHI = -0.15, ni.max() + 0.01
+off = ni < YLO                    # drawn as an open triangle on the lower edge
+assert not (nd < YLO).any() and off.sum() == 1
+fig, ax = plt.subplots(figsize=(W2, 3.3))
+grid(ax)
+ax.axhline(0, color=INK2, lw=0.6, zorder=2)
+ax.plot(x[none & ~off], ni[none & ~off], ".", ms=2, color=GRAY, label="kept by neither", rasterized=True, zorder=2)
+ax.plot(x[off], [YLO] * int(off.sum()), "v", ms=4.5, mfc="white", mec=INK, mew=0.7, ls="none", clip_on=False,
+        label="off scale (below range)", zorder=5)
+ax.plot(x, nd, "-", lw=LW_THIN, color=DAY, label="day-rate forecast (line)", zorder=2)
+ax.plot(x[both], ni[both], "o", ms=2.6, mfc="none", mec=INK2, mew=0.5, label="kept by both", zorder=3)
+ax.plot(x[only_i], ni[only_i], "s", ms=4.2, mfc=ITEM, mec=INK, mew=0.5, label="kept only by itemized", zorder=4)
+ax.plot(x[only_d], ni[only_d], "^", ms=5, mfc=DAY, mec=INK, mew=0.5, label="kept only by day-rate", zorder=4)
+ax.set_xlabel("Operations of the 2024 pool, ranked by itemized forecast")
+ax.set_ylabel("Forecast NPV, % of C")
+ax.set_ylim(YLO, YHI)
 ax.set_xlim(0, d.height + 1)
-ax.legend(frameon=False, loc='upper center', bbox_to_anchor=(0.5, -0.17), ncol=3, markerscale=1.2, columnspacing=1.2, handletextpad=0.4)
-save(fig, 'fig_flips.png')
+legend(ax, loc="upper center", bbox_to_anchor=(0.5, -0.17), ncol=3, markerscale=1.1)
+save(fig, "fig_flips.png")
 shutil.rmtree(SCRATCH, ignore_errors=True)
